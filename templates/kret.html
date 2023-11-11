@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1 class="page_title">KRET</h1>
+    {% for article in kretList %}
+        <div class="post_block">
+            <a id="article_link" href="/kret/post1">{{ article.title }}</a>
+            <p id="authors_date">By {{ article.author }} on {{ article.date }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}

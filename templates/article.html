@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block mainInfo %}
+    <h1>{{ article.title }}</h1>
+    <h3>{{ article.content }}</h3>
+    <p>By {{ article.author }} on {{ article.date }}</p>
+{% endblock mainInfo %}

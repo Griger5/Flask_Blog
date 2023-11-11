@@ -1,0 +1,90 @@
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.nav-bar {
+  background-color: #9109F0;
+  padding-left: 30px;
+  padding-right: 30px; 
+  position: absolute;
+  top: 0px;
+  height: 120px;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.nav-bar_title {
+  font-size: 60px;
+  color: white;
+  position: relative;
+  top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  border: 3px solid purple;
+}
+
+.nav-bar_link{
+  font-size: 30px;
+  text-decoration: none;
+  font-family: 'Helvetica', serif;
+  color: white;
+  position: absolute;
+  bottom: 30px;
+}
+.nav-bar_link:hover{
+  font-size: 35px;
+  font-style: italic;
+}
+
+#main_page {
+  left: 400px;
+}
+#posts {
+  left: 600px;
+}
+#login {
+  left: 1300px;
+}
+#sign_in {
+  left: 1500px;
+}
+
+.main_content{
+  position: absolute;
+  top: 150px;
+  margin-left: 200px;
+}
+
+.page_title{
+  font-size: 50px;
+  font-family: 'Helvetica', serif;
+  font-weight: 600;
+}
+
+.post_block{
+  width: 1500px;
+  /*margin-right: 0 auto;*/
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid black;
+  /*line-height: 40px;*/
+}
+
+#article_link{
+  font-size: 30px;
+  font-family: 'Helvetica', serif;
+  text-decoration: none;
+}
+#authors_date{
+  font-size: 18px;
+  font-family: 'Helvetica', serif;
+  font-weight: 500;
+}

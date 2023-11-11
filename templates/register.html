@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1 class="page_title">Zarejestruj się</h1>
+    <div class="main_content">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend>Dołącz do nas!</legend>
+                <div>
+                    {{ form.username.label }}
+                    {% if form.username.errors %}
+                        {{ form.username }}
+                        <div>
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username }}
+                    {% endif %} 
+                </div>
+                <div>
+                    {{ form.password.label }}
+                    {{ form.password }}
+                </div>
+                <div>
+                    {{ form.confirm_password.label }}
+                    {{ form.confirm_password }}
+                </div>
+                <div>
+                    {{ form.email.label }}
+                    {{ form.email }}
+                </div>
+                <div>
+                    {{ form.submit }}
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}
